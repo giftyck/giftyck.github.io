@@ -9,9 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!--Import progress bar css-->
-    <link rel="stylesheet" href="./static/loading-bar/loading-bar.css">
-
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
@@ -270,14 +267,10 @@
     -->
 
     </div>
-    <div class="center-align">
+    <div class="section center-align">
         <h1>¿Eres proveedor?</h1>
-        <div class="btn-large red">Vende en Giftyck</div>
+        <a data-target="modal-supliers" class="btn-large red modal-trigger" href="#!">Vende en Giftyck</a>
     </div>
-
-    <!-- Modal Trigger -->
-    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
-
 
     <footer class="page-footer">
         <div class="container">
@@ -289,8 +282,12 @@
                 <div class="col l4 offset-l2 s12">
                     <h5 class="white-text">Políticas de datos</h5>
                     <ul>
-                        <li><a data-target="modal-terms" class="grey-text text-lighten-3 modal-trigger" href="#!">Politicas de Cookies y Privacidad</a></li>
+                        <li><a data-target="modal-terms" class="grey-text text-lighten-3 modal-trigger" href="#!">Términos y condiciones</a></li>
+                        <li><a data-target="modal-terms" class="grey-text text-lighten-3 modal-trigger" href="#!">Politica de Cookies</a></li>
+                        <li><a data-target="modal-terms" class="grey-text text-lighten-3 modal-trigger" href="#!">Politica de Privacidad</a></li>
+
                     </ul>
+
                 </div>
             </div>
         </div>
@@ -317,13 +314,25 @@
             </div>
         </div>
 
+
+        <div id="modal-supliers" class="modal">
+                <div class="modal-content">
+                    <h1>Vende en Giftyck</h1>
+                    <p class="flow-text">Aumenta tus ventas mostrando tus productos en nuestra web</p>
+                    <p class="flow-text">Déjanos tus datos y nos pondremos en contacto con usted</p>
+
+
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                </div>
+            </div>
+
     
 
     <!--JavaScript at end of body for optimized loading-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-
-    <script href="./static/loading-bar/loading-bar.js"></script>
 
     <script>
         // Initialize modals
