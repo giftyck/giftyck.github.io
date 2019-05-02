@@ -49,13 +49,13 @@
                     <h4>Pruébalo y elige un regalo en menos de un minuto!</h4>
                 </div>
             </div>
-            
+
         </div>
 
         <div class="section container row white">
-            <h2>Paso 1: Presupuesto para el regalo</h2>
+            <h2>Paso 1: Presupuesto máximo para el regalo</h2>
             <p class="range-field">
-                <input type="range" id="test" min="0" max="100" />
+                <input id="max-price" type="range" id="test" min="0" max="100" />
             </p>
 
         </div>
@@ -65,13 +65,9 @@
             <div class="btn red">Descubrir</div>
             <div class="btn blue">Ideas</div>
             <div class="btn">Recomendaciones</div>
-            <div
-                data-preset="fan"
-                class="ldBar label-center"
-                data-value="35"
-            ></div>
+            <div data-preset="fan" class="ldBar label-center" data-value="35"></div>
 
-            <div class="row">
+            <div id="product-board" class="row">
                 <div class="col s12 m3">
                     <div class="card hoverable">
                         <div class="card-image">
@@ -94,7 +90,7 @@
                             <img src="./static/img/Articulos_Futbol.jpg">
                         </div>
                         <div class="card-content">
-                                <span class="card-title">Comida tradicional Chilena</span>
+                            <span class="card-title">Comida tradicional Chilena</span>
 
                             <p>Deliciosa comida chilena blabla, la descripción del artículo vamos :P</p>
                         </div>
@@ -110,7 +106,7 @@
                             <img src="./static/img/Botella_Alcohol.jpg">
                         </div>
                         <div class="card-content">
-                                <span class="card-title">Comida tradicional Chilena</span>
+                            <span class="card-title">Comida tradicional Chilena</span>
 
                             <p>Deliciosa comida chilena blabla, la descripción del artículo vamos :P</p>
                         </div>
@@ -126,7 +122,7 @@
                             <img src="./static/img/Gadget_Tecnologia.jpg">
                         </div>
                         <div class="card-content">
-                                <span class="card-title">Comida tradicional Chilena</span>
+                            <span class="card-title">Comida tradicional Chilena</span>
 
                             <p>Deliciosa comida chilena blabla, la descripción del artículo vamos :P</p>
                         </div>
@@ -207,7 +203,11 @@
             <h3 class="white-text center-align">¿Quieres que nunca más se te olvide una fecha importante?</h3>
             <div class="container section row">
                 <div class="col s6">
-                    <input type="text" placeholder="Tu fecha especial" class="datepicker">
+                    <input type="text" placeholder="Un cumpleaños?" class="datepicker">
+                    <input type="text" placeholder="Un aniversario?" class="datepicker">
+                    <input type="text" placeholder="" class="datepicker">
+                    <input type="text" placeholder="Fecha 1" class="datepicker">
+
                 </div>
                 <div class="col s6">
                     <p>
@@ -275,6 +275,9 @@
         <div class="btn-large red">Vende en Giftyck</div>
     </div>
 
+    <!-- Modal Trigger -->
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
 
     <footer class="page-footer">
         <div class="container">
@@ -286,9 +289,7 @@
                 <div class="col l4 offset-l2 s12">
                     <h5 class="white-text">Políticas de datos</h5>
                     <ul>
-                        <li><a class="grey-text text-lighten-3" href="#!">Términos y condiciones</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Política de Cookies</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Política de Privacidad</a></li>
+                        <li><a data-target="modal-terms" class="grey-text text-lighten-3 modal-trigger" href="#!">Politicas de Cookies y Privacidad</a></li>
                     </ul>
                 </div>
             </div>
@@ -307,13 +308,30 @@
     </footer>
 
 
+    <div id="modal-terms" class="modal">
+            <div class="modal-content">
+                <h1 class="c5" id="h.mxkijizc809e"><span class="c11">T&eacute;rminos y Condiciones</span></h1><hr><p class="c7 c1"><span class="c10"></span></p><p class="c0"><span class="c3">El siguiente documento regula los t&eacute;rminos y condiciones bajo los cuales Ud. tiene derecho a acceder y usar los servicios del Sitio Web www.giftyck.cl sitio en adelante denominados como &quot;el Sitio Web&quot;.</span></p><h3 class="c2" id="h.p5hk419yy1v7"><span class="c9">I.-Condiciones Generales</span></h3><p class="c0"><span class="c3">1. Aceptaci&oacute;n de condiciones. Se entender&aacute;n por conocidas y aceptadas estas cl&aacute;usulas y condiciones por el solo hecho del registro y/o la compra en este Sitio Web.</span></p><p class="c0"><span class="c3">2. El registro de cada usuario se realizar&aacute; completando y suscribiendo los antecedentes solicitados en el formulario &quot;Crea una cuenta&rdquo;, el cual se efect&uacute;a autom&aacute;ticamente haciendo click en cada paso del registro online.</span></p><p class="c0"><span class="c3">3. El usuario una vez registrado dispondr&aacute; de una clave secreta que le permitir&aacute; el acceso personalizado, seguro y confidencial para realizar sus operaciones en nuestro sitio.</span></p><p class="c0"><span class="c3">4. El usuario asume totalmente la responsabilidad por el mantenimiento y la confidencialidad de su clave secreta registrada en este Sitio Web, la cual le permite hacer compras. Dicha clave es de uso personal e intransferible y su entrega a terceros, no involucra responsabilidad para el Sitio Web en caso de mala utilizaci&oacute;n.</span></p><p class="c0"><span class="c3">5. El usuario dispondr&aacute; en todo momento de los derechos de informaci&oacute;n, rectificaci&oacute;n y cancelaci&oacute;n de los datos personales. El Sitio Web no traspasar&aacute; de modo alguno a ninguna empresa o persona los antecedentes personales de los usuarios registrados en este sitio.</span></p><p class="c0"><span class="c3">6. Los precios de los productos publicados en el Sitio Web son publicados en pesos chilenos (CLP$) e incluyen IVA, solo tendr&aacute;n vigencia y aplicaci&oacute;n en este.</span></p><p class="c0"><span class="c3">No obstante, los precios Oferta ser&aacute;n Mantenidos durante la vigencia informada para cada oferta, o hasta agotar el stock indicado en cada caso.</span></p><p class="c0"><span class="c3">Los descuentos no son acumulables entre promociones y tampoco son aplicables a promociones ya establecidas.</span></p><p class="c0"><span class="c3">7. En cuanto a los precios de ventas publicados en el Sitio Web podr&aacute;n ser revisados y modificados sin previo aviso. La empresa se reserva la facultad de no procesar el pedido de compra por falta de stock o por cualquier motivo de otra &iacute;ndole; si el producto comprado no se encuentra en stock se ofrecer&aacute; abonar el valor de lo cancelado a una pr&oacute;xima compra o la anulaci&oacute;n de esta.</span></p><p class="c0"><span class="c3">8. Se deja establecido que las fotos publicadas en el carro de compra son solo referenciales y pueden tener alguna diferencia con el producto original.</span></p><p class="c0"><span class="c3">9. Toda compra que se efect&uacute;e a trav&eacute;s del Sitio Web ser&aacute; objeto de confirmaci&oacute;n y validaci&oacute;n por parte de la empresa especialmente en lo que guarda relaci&oacute;n con la disponibilidad del producto y el pago de estos.</span></p><p class="c0 c1"><span class="c3"></span></p><p class="c0"><span class="c3">10. Delimitaci&oacute;n de responsabilidad</span></p><p class="c0"><span class="c3">Giftyck Limitada no se responsabiliza frente a los usuarios o terceros por los da&ntilde;os y perjuicios que sean consecuencia directa o indirecta de la interrupci&oacute;n, suspensi&oacute;n o finalizaci&oacute;n de los servicios ofrecidos por el sitio, cuando estos obedezcan a casos fortuitos o de fuerza mayor.</span></p><p class="c0 c1"><span class="c3"></span></p><p class="c0"><span class="c3">11. Jurisdicci&oacute;n</span></p><p class="c0"><span class="c3">Cualquier controversia que surja en relaci&oacute;n a lo establecido en este documento, ser&aacute; sometido y resuelto por los Tribunales Ordinarios de Justicia de la ciudad de Santiago o los Tribunales de Justicia de la jurisdicci&oacute;n correspondiente al domicilio del consumidor, a elecci&oacute;n del consumidor si &eacute;ste fuera el demandante. En caso de ser la empresa la demandante, el tribunal competente ser&aacute;n los Tribunales Ordinarios de Justicia de Santiago. La legislaci&oacute;n chilena ser&aacute; la aplicable respecto de todo lo relacionado con estos T&eacute;rminos y Condiciones.</span></p><p class="c7"><span class="c3">&nbsp;Uso de los datos personales registrados</span></p><p class="c7"><span class="c3">Los datos referidos en estos T&eacute;rminos y Condiciones tendr&aacute;n como finalidad validar los pedidos y mejorar la labor de informaci&oacute;n y comercializaci&oacute;n de los productos y servicios prestados por las empresas. S&oacute;lo podr&aacute;n ser entregados a las empresas filiales o relacionadas con Cencosud S.A., en ning&uacute;n caso ser&aacute;n traspasados a terceros. Dicha entrega ser&aacute; revocable por el usuario.</span></p><p class="c7 c1"><span class="c3"></span></p><h3 class="c2" id="h.9ltbuwqtvqw"><span class="c9">ll.- Condiciones de Venta y Pago</span></h3><p class="c0"><span class="c3">1. Formas de pago. Los productos ofrecidos pueden ser cancelados v&iacute;a Webpay directamente en el Sitio Web con tarjetas bancarias; Visa, Mastercard, Magna, American Express, Diners Club y Red Compra, y v&iacute;a Transferencia Bancaria.</span></p><p class="c0"><span class="c3">2. Solo se realizan despachos en Chile Continental, se excluye Isla de Pascua, Isla Juan Fern&aacute;ndez y Ant&aacute;rtica.</span></p><h3 class="c2" id="h.v8mzj24rt73t"><span class="c9">III.- Condiciones de Despacho y Entrega</span></h3><p class="c0"><span class="c3">1. Los productos y servicios adquiridos a trav&eacute;s del Sitio Web quedar&aacute;n sujetos a las condiciones de despacho, las cuales son retiro en tienda o despacho por pagar v&iacute;a Starken, Pullman y Chilexpress.</span></p><p class="c0"><span class="c3">2. La informaci&oacute;n de env&iacute;o es de exclusiva responsabilidad del usuario.</span></p><p class="c0"><span class="c3">3. Los plazos para el despacho se cuentan desde el momento en que el Sitio Web haya validado la orden de compra y el medio de pago utilizado, a contar del d&iacute;a h&aacute;bil posterior de la fecha de la orden de compra.</span></p><p class="c0"><span class="c3">4. El plazo de entrega para Regi&oacute;n Metropolitana (Santiago) es de tres (3) d&iacute;as h&aacute;biles en el horario comprendido entre las 9:00 y las 21:00 horas y para Regiones, es de siete (7) d&iacute;as h&aacute;biles en el horario comprendido entre las 9:00 y las 18:00 horas, en ambos casos a contar del d&iacute;a h&aacute;bil posterior de la fecha de la orden de compra. No se realizan despachos los d&iacute;as s&aacute;bados, domingos y festivos.</span></p><p class="c0"><span class="c3">5. El costo de despacho por los productos comprados en el Sitio Web ser&aacute; de cargo del comprador y no est&aacute; incluido en el precio de venta, es decir, se deber&aacute; pagar por el despacho.</span></p><p class="c0"><span class="c3">6. Es de responsabilidad del cliente revisar que el pedido venga en &oacute;ptimas condiciones y sin adulteraciones al momento de aceptar la recepci&oacute;n.</span></p><p class="c1 c7"><span class="c3"></span></p><h3 class="c2" id="h.u9njl2rzbhse"><span class="c9">IV. Cambios y devoluciones:</span></h3><p class="c0"><span class="c3">En caso de declinaciones de compra, el cliente puede anular la transacci&oacute;n siempre y cuando el despacho no se haya realizado. Dicha operaci&oacute;n puede ser realizada contact&aacute;ndose a cualquier de nuestros contactos de atenci&oacute;n al cliente a los fonos y v&iacute;a correo electr&oacute;nico a contacto@giftyck.cl Si existe problema toda devoluci&oacute;n y/o cambio tendr&aacute; un plazo legal no mayor a los nueve (9) d&iacute;as h&aacute;biles para ser realizada, Giftyck Limitada aceptar&aacute; dicha acci&oacute;n siempre y cuando el producto conserve su sellado y embalaje original, as&iacute; como etiquetas. Los gastos de env&iacute;o y despacho ser&aacute;n de cargo del cliente.</span></p><p class="c0"><span class="c3">En caso de que el producto recibido por el cliente sea distinto al comprado, Giftyck Limitada se compromete a hacer el cambio correspondiente incluyendo los gastos de env&iacute;o.</span></p><p class="c7 c1"><span class="c3"></span></p><h3 class="c2" id="h.iil1m1qmmgi4"><span class="c9">V.- Garant&iacute;a:</span></h3><p class="c0"><span class="c3">Todo producto nuevo cuenta con garant&iacute;a legal de 3 meses desde la recepci&oacute;n del mismo y procede s&oacute;lo en caso de fallas de fabricaci&oacute;n. Adem&aacute;s, el producto podr&iacute;a contar con una garant&iacute;a especial del fabricante. Esta garant&iacute;a no aplica para una incorrecta manipulaci&oacute;n, falta de mantenci&oacute;n y desgaste natural por uso.</span></p><p class="c0"><span class="c3">Los gastos o costos de cualquier tipo (Por traslados, por tiempo utilizado, etc) en que incurra el cliente para hacer efectiva una garant&iacute;a ser&aacute;n de su propio cargo, as&iacute; como todo da&ntilde;o emergente y lucro cesante causado mientras el producto se encuentre en servicio t&eacute;cnico.</span></p><p class="c0 c1"><span class="c3"></span></p><p class="c0 c1"><span class="c3"></span></p><p class="c0 c1"><span class="c3"></span></p><p class="c0"><span class="c3">Seguridad y privacidad en la compra</span></p><p class="c0"><span class="c3">Todas las transacciones realizadas en www.giftyck.cl viajan a trav&eacute;s de Internet en forma encriptada v&iacute;a SSL (Secure Socket Layer) que asegura la confidencialidad del mensaje y evita que sean interceptadas para usos fraudulentos. &nbsp;Este es el est&aacute;ndar mundial usado por las principales compa&ntilde;&iacute;as internacionales para realizar transacciones electr&oacute;nicas seguras. </span></p><p class="c0 c1"><span class="c3"></span></p><p class="c0"><span class="c3">As&iacute; te aseguramos que toda tu informaci&oacute;n personal, como nombre, e-mail, direcci&oacute;n, y n&uacute;mero de tarjeta de cr&eacute;dito, no podr&aacute; ser le&iacute;da ni capturada por terceros mientras viaja por la red.</span></p><p class="c0 c1"><span class="c3"></span></p><p class="c0"><span class="c3">&iquest;C&oacute;mo saber que una compra es segura?</span></p><p class="c0"><span class="c3">Para reconocer cuando una transacci&oacute;n est&aacute; protegida por un servidor seguro, debes revisar si en tu navegador aparece una llave o un candado cerrado en la parte derecha (si usas Internet Explorer), o bien un candado cerrado en la parte izquierda (si usas Netscape).</span></p><p class="c0 c1"><span class="c3"></span></p><p class="c0"><span class="c3">Tambi&eacute;n es necesario revisar si en el sitio est&aacute; presente el certificado de seguridad que ha sido otorgado a la empresa. En nuestro caso el certificado es de Verisign, Inc.</span></p><p class="c0 c1"><span class="c3"></span></p><p class="c0"><span class="c3">Pol&iacute;tica de Declaraci&oacute;n de Privacidad</span></p><p class="c0"><span class="c3">Esta pol&iacute;tica corresponde a la declaraci&oacute;n antes citada con respecto a la confidencialidad de los datos entregados por los usuarios en el sitio web.</span></p><p class="c0 c1"><span class="c3"></span></p><p class="c0"><span class="c3">Compromiso con la Seguridad</span></p><p class="c0"><span class="c3">Giftyck declara que su sitio es seguro, de manera de entregar a los clientes un servicio de alto nivel, con los controles internos apropiados que le garanticen a nuestros clientes un correcto uso de la informaci&oacute;n.</span></p><p class="c0 c1"><span class="c3"></span></p><p class="c0"><span class="c3">Informaci&oacute;n entregada por los usuarios</span></p><p class="c0"><span class="c3">La informaci&oacute;n solicitada en nuestro formulario de registro, pide a los usuarios informaci&oacute;n como nombre, direcci&oacute;n electr&oacute;nica, direcci&oacute;n f&iacute;sica y n&uacute;mero telef&oacute;nico. Esta informaci&oacute;n es usada para el despacho de los pedidos y para responder las consultas acerca de nuestros productos y servicios.</span></p><p class="c0 c1"><span class="c3"></span></p><p class="c0"><span class="c3">Captura de informaci&oacute;n de usuarios</span></p><p class="c0"><span class="c3">giftyck.cl no captura informaci&oacute;n referente a actividades espec&iacute;ficas de un usuario particular. Sin embargo, se generan reportes que nos permiten ver la actividad consolidada an&oacute;nima.</span></p><p class="c0 c1"><span class="c3"></span></p><p class="c0"><span class="c3">Usamos &quot;cookies&quot; para seguir su &quot;carro de compras&quot; y asegurarnos que no vea repetidamente el mismo mensaje publicitario. Tambi&eacute;n usamos &quot;cookies&quot; para mostrarle en el sitio web informaci&oacute;n espec&iacute;fica referida a sus intereses.</span></p><p class="c0 c1"><span class="c3"></span></p><p class="c0"><span class="c3">Links con otros sitios</span></p><p class="c0"><span class="c3">Nuestro sitio web puede contener &quot;links&quot; a otros sitios.</span></p><p class="c0"><span class="c3">giftyck.cl no es responsable de las practicas de seguridad o privacidad, o el contenido de esos sitios.</span></p><p class="c0 c1"><span class="c3"></span></p><p class="c0"><span class="c3">Protecci&oacute;n de Datos</span></p><p class="c0"><span class="c3">Nuestro sitio esta protegido con una amplia variedad de medidas de seguridad, tales como procedimientos de control de actualizaci&oacute;n de datos, cambios de claves, respaldos peri&oacute;dicos de datos, etc.</span></p><p class="c0 c1"><span class="c3"></span></p><p class="c0"><span class="c3">El usuario dispondr&aacute; siempre de los derechos de informaci&oacute;n, rectificaci&oacute;n y cancelaci&oacute;n de los datos personales conforme a la Ley N&ordm; 19.268 sobre protecci&oacute;n de datos de car&aacute;cter personal. Asimismo, si deseas modificar tu informaci&oacute;n personal, lo puedes hacer directamente en nuestro sitio web.</span></p><p class="c0 c1"><span class="c3"></span></p><p class="c0"><span class="c3">Consultas para mayor informaci&oacute;n</span></p><p class="c0 c1"><span class="c3"></span></p><p class="c0"><span class="c3">Si tienes alguna duda o consulta acerca de nuestra declaraci&oacute;n de seguridad y privacidad o las pr&aacute;cticas usadas en este sitio escr&iacute;benos en nuestro formulario de contacto.</span></p><p class="c0 c1"><span class="c3"></span></p><p class="c0"><span class="c3">Confidencialidad en datos personales</span></p><p class="c0"><span class="c3">Giftyck te garantiza una total seguridad en todo lo relacionado con tus datos personales.</span></p><p class="c0 c1"><span class="c3"></span></p><p class="c0"><span class="c3">Prevenci&oacute;n en la entrega de informaci&oacute;n por tel&eacute;fono</span></p><p class="c0"><span class="c3">Giftyck NO solicita datos personales a sus clientes por tel&eacute;fono, porque ya los conocemos.</span></p><p class="c0 c1"><span class="c3"></span></p><p class="c0"><span class="c3">S&oacute;lo en el caso de comprar por primera vez en nuestro sitio www.giftyck.cl, se validaron los datos entregados en el formulario de registro web.</span></p><p class="c0 c1"><span class="c3"></span></p><p class="c0 c1"><span class="c3"></span></p><p class="c1 c6"><span class="c8"></span></p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            </div>
+        </div>
+
+    
+
     <!--JavaScript at end of body for optimized loading-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    
-    
+
+
     <script href="./static/loading-bar/loading-bar.js"></script>
 
-
+    <script>
+        // Initialize modals
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.modal');
+        var instances = M.Modal.init(elems, {});
+    });
+    </script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
